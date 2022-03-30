@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head> 
+		<title>HTML - Formulário Fale Conosco</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="./css/style.css">		
+		<link rel="stylesheet" type="text/css" href="./css/modulo-07.css">
+		<link rel="stylesheet" type="text/css" href="./css/layout-responsivo.css">	
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		
+		<header>
+			<h2>Curso Front-end</h2>
+			<p>Aprenda do Zero ao Pro</p>
+			<div><h2>EBAC</h2></div>
+			<h5>Escola Britânica de Artes Criativas e Tecnologia</h5>
+			<p>Aprenda de modo prático</p>
+		</header>
+
+		<section class="foto">
+		
+			<nav>
+				<h3>Aulas</h3>
+				<ul class="navegacao">
+					<li><a href="03-formatacao-de-texto.html">Formatação de Texto</a></li>
+					<li><a href="04-tabelas.html">Tabelas</a></li>
+				</ul>
+	
+			</nav> <br>
+			<article>
+				
+				<h1>Contato - Vamos tomar um chá?</h1>
+				
+			<img width="100%" height="auto" src="./css/images/cha-alecrim.png" alt="Chá">
+					
+
+				
+
+				<p>Preencha os campos abaixo</p>
+
+				<form method="post">
+					
+					<div>
+						<label for="nome">Nome</label><br>
+
+						<input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+					</div>
+
+					<div>
+						<label for="email">E-mail</label><br>
+						<input type="email" name="email" id="email" placeholder="Digite seu email">
+					</div>
+
+					<div>
+						<label for="mensagem">Telefone</label><br>
+						<input type="tel" name="telefone" id="telefone" placeholder="Digite seu telefone">
+					</div>
+
+					<div>
+						<p>
+							<label>Qual seu chá favorito?</label> <br>
+							<input type="radio" name="linguagens" value="mate"> Chá mate <br>
+							<input type="radio" name="linguagens" value="kombucha"> Kombuchá <br>
+							<input type="radio" name="linguagens" value="camomila"> Chá de camomila <br> 
+							<input type="radio" name="linguagens" value="maca"> Chá de maçã <br>
+							<input type="radio" name="linguagens" value="gengibre"> Chá de gengibre <br>
+						</p>
+					</div>
+
+					<div>
+						<p>
+							<label>O que você adiciona no seu chá?</label> <br> 
+							<input type="checkbox" name="linguagens" value="mel"> Mel <br>
+							<input type="checkbox" name="linguagens" value="limão"> Limão <br>
+							<input type="checkbox" name="linguagens" value="leite"> Leite <br>
+							<input type="checkbox" name="linguagens" value="acucar"> Açúcar <br>
+						</p>
+					</div>
+
+					<div>
+						<label>Em qual estado você mora?</label> <br> 
+						<select>
+							<option value="sp" >São Paulo</option>
+							<option value="rj">Rio de Janeiro</option>
+							<option value="mg"selected>Minas Gerais</option>
+							<option value="es">Espírito Santo</option>
+						</select>
+					</div>
+
+					<div>
+						<input type="submit">
+					</div>
+				</form>
+				
+			</article>
+		</section>
+		<footer>Desenvolvido por Cintia :)</footer>
+	</body>
+</html>

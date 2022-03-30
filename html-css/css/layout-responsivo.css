@@ -1,0 +1,30 @@
+
+  @media (max-width: 768px){
+    nav {
+      width: 30vw;
+    } 
+    article{
+      width: 95%;
+    }
+    .coluna, table{
+      width: 50vw;
+      min-width: unset;
+    }
+  }
+  
+  @media (max-width: 425px){
+    nav,
+    .coluna, footer, ul, header, .table-container{
+      width: 100%;
+      min-width: 320px;
+    }
+
+  }
+
+  .navegacao {
+      display: contents;
+      min-width: 160px;
+  }
+  img {
+      margin: auto;
+  }

@@ -119,3 +119,7 @@ footer small {
     font-size: 80%;
     display: block;
 }
+
+.cog-loader {
+    visibility: hidden !important;
+}

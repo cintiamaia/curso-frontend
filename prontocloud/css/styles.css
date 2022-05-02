@@ -29,6 +29,16 @@ body {
     width: 100%;
     margin: 0 auto;
 }
+.smcontainer {
+    display: block;
+    text-align: left;
+    float: left;
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
 
 header {
     background-color: #fff;
@@ -72,7 +82,11 @@ img {
     height: auto;
     padding: 5px;
 }
-
+.smcontainer img {
+    margin: auto;
+    width: 100%;
+    max-width: 100% !important;
+}
 #tenho-interesse {
     background-color: #b8c8d6;
     width: 100%;

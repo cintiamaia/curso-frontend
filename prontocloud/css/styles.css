@@ -23,10 +23,11 @@ body {
 }
 .container {
     display: block;
-    float: left;
+    text-align: center;
+    float: right;
     padding: 20px;
+    width: 100%;
     margin: 0 auto;
-    max-width: 1198px;
 }
 
 header {
@@ -60,50 +61,75 @@ h4 {
 
 p {
     color: #333;
+    font-size: 1.5rem;
+    text-align: justify;
+    padding: 10px;
 }
 
 img {
-    max-width: 100%;
+    float: left;
+    max-width: 50%;
     height: auto;
+    padding: 5px;
 }
 
 #tenho-interesse {
     background-color: #b8c8d6;
     width: 100%;
+    display: block;
+    padding-bottom: 20px;
+}
+
+
+#tenho-interesse p {
+    text-align: center;
 }
 
 #tenho-interesse form, .cog-form__container {
     background-color: #b8c8d6 !important;
+    align-items: center !important;
+    text-align: center !important;
+    margin: auto !important;
 }
 
 #tenho-interesse .cog-heading, .cog-label {
     color: #385874 !important;
+    text-align: center !important;
 }
+
 li {
     list-style: none;
 }
 ol li {
     color: #454545;
+    font-size: 1.5rem;
 }
 section {
     background-color: #fff;
     display: block;
     float: left;
     font-size: 1.5rem;
-    padding: 20px;
     width: 100%;
 }
 
 section nav {
     display: block;
-    float: left;
-    width: 30%;
+    width: 100%;
+    float: right;
 }
 
 nav li {
+    max-width: 500px;
     background-color: #efefef;
-    margin: 1px 20px 1px 0px;
+    margin: auto;
     padding: 10px;
+    width: 100vw;
+    text-align: center;
+}
+
+ul {
+    padding-inline-start: 0;
+    
 }
 
 nav li:hover {
@@ -119,11 +145,9 @@ nav a:hover {
     color: #385874;
 }
 
+
 section article {
-    
     display: block;
-    float: left;
-    width: 70%;
 }
 
 footer {
@@ -146,6 +170,71 @@ footer small {
 }
 
 .cognito {
-    height: 400px !important;
-    overflow: hidden !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cog-abuse, .cog-branding {
+    display: none !important;
+}
+#banner {
+    background-image: url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: block;
+    width: 100vw;
+    height: fit-content;
+}
+
+.legenda-container {
+    float: right;
+}
+
+.legenda {
+    background-color: rgba(255, 255, 255, .6);
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+
+.legenda h5, .legenda h4 {
+    color: #254159;
+}
+
+.button-cta {
+    border-radius: 5px;
+    display: inline;
+    background-color: orange;
+    color:#fff;
+    font-size: 20px;
+    box-shadow: 2px 2px 4px black;
+    padding: 10px 15px;
+    width: auto;
+    float: left;
+    text-decoration: none;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.container h1 {
+    text-align: left;
+}
+
+dl {
+    margin: 20px 0;
+    text-align: left;
+}
+
+dt {
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+dd{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
 }

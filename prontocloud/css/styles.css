@@ -65,6 +65,7 @@ h3 {
 }
 
 h4 {
+    line-height: 3rem;
     font-size: 1.6rem;
     color: #385874;
 }
@@ -72,6 +73,7 @@ h4 {
 p {
     color: #333;
     font-size: 1.5rem;
+    line-height: 2.5rem;
     text-align: justify;
     padding: 10px;
 }
@@ -117,6 +119,7 @@ li {
 ol li {
     color: #454545;
     font-size: 1.5rem;
+    line-height: 2.5rem;
 }
 section {
     background-color: #fff;

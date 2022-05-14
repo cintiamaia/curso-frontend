@@ -101,11 +101,14 @@ img {
     text-align: center;
 }
 
-#tenho-interesse form, .cog-form__container {
+#tenho-interesse form, .cog-form__container, .cog-row {
     background-color: #b8c8d6 !important;
+    width: 80% !important;
     align-items: center !important;
     text-align: center !important;
     margin: auto !important;
+    min-width: 400px;
+    
 }
 
 #tenho-interesse .cog-heading, .cog-label {
@@ -187,9 +190,9 @@ footer small {
 }
 
 .cognito {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
 }
 
 .cog-abuse, .cog-branding {
@@ -203,6 +206,7 @@ footer small {
     display: block;
     width: 100vw;
     height: fit-content;
+    margin-bottom: 10px;
 }
 
 .legenda-container {
@@ -254,4 +258,14 @@ dd{
     margin-top: 5px;
     margin-bottom: 20px;
     font-size: 1.4rem;
+}
+
+.navega {
+    font-size: 1.5rem;
+    margin-top: 5px;
+}
+
+.cog-page__navigation{
+    width: 100% !important;
+    display: block !important;
 }

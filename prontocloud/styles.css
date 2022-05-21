@@ -1,0 +1,273 @@
+html{
+    width: auto;
+    border: 0;
+    font-size: 62.5%;
+    max-width: fit-content;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: auto;
+    margin: 0%;
+    background-color: #f5f5f5;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main-container {
+    display: block;
+    width: 100vw;
+    margin: 0 auto;
+}
+.container {
+    display: block;
+    text-align: center;
+    float: right;
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+}
+.smcontainer {
+    display: block;
+    text-align: left;
+    float: left;
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+header {
+    background-color: #fff;
+    display: block;
+    float: left;
+    padding: 20px;
+    width: 100%;
+    border-bottom: 1px solid #254159;
+}
+
+h1 {
+    font-size: 2.4rem;
+    color: #254159;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #254159;
+}
+
+h3 {
+    font-size: 1.8rem;
+    color: #254159;
+}
+
+h4 {
+    line-height: 3rem;
+    font-size: 1.6rem;
+    color: #385874;
+}
+
+p {
+    color: #333;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-align: justify;
+    padding: 10px;
+}
+
+img {
+    float: left;
+    max-width: 50%;
+    height: auto;
+    padding: 5px;
+}
+.smcontainer img {
+    margin: auto;
+    width: 100%;
+    max-width: 100% !important;
+}
+#tenho-interesse {
+    background-color: #b8c8d6;
+    width: 100%;
+    display: block;
+    padding-bottom: 20px;
+}
+
+
+#tenho-interesse p {
+    text-align: center;
+}
+
+#tenho-interesse form, .cog-form__container, .cog-row {
+    background-color: #b8c8d6 !important;
+    width: 80% !important;
+    align-items: center !important;
+    text-align: center !important;
+    margin: auto !important;
+    min-width: 400px;
+    
+}
+
+#tenho-interesse .cog-heading, .cog-label {
+    color: #385874 !important;
+    text-align: center !important;
+}
+
+li {
+    list-style: none;
+}
+ol li {
+    color: #454545;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+section {
+    background-color: #fff;
+    display: block;
+    float: left;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+section nav {
+    display: block;
+    width: 100%;
+    float: right;
+}
+
+nav li {
+    max-width: 500px;
+    background-color: #efefef;
+    margin: auto;
+    padding: 10px;
+    width: 100vw;
+    text-align: center;
+}
+
+ul {
+    padding-inline-start: 0;
+    
+}
+
+nav li:hover {
+    background-color: #dfdfdf;
+}
+
+nav a {
+    text-decoration: none;
+    color: #254159
+}
+
+nav a:hover {
+    color: #385874;
+}
+
+
+section article {
+    display: block;
+}
+
+footer {
+    background-color: #254159;
+    color: #fff;
+    display: block;
+    float: left;
+    padding: 20px;
+    width: 100%;
+}
+
+footer p {
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+footer small {
+    font-size: 80%;
+    display: block;
+}
+
+.cognito {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.cog-abuse, .cog-branding {
+    display: none !important;
+}
+#banner {
+    background-image: url(../images/banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: block;
+    width: 100vw;
+    height: fit-content;
+    margin-bottom: 10px;
+}
+
+.legenda-container {
+    float: right;
+}
+
+.legenda {
+    background-color: rgba(255, 255, 255, .6);
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+
+.legenda h5, .legenda h4 {
+    color: #254159;
+}
+
+.button-cta {
+    border-radius: 5px;
+    display: inline;
+    background-color: orange;
+    color:#fff;
+    font-size: 20px;
+    box-shadow: 2px 2px 4px black;
+    padding: 10px 15px;
+    width: auto;
+    float: left;
+    text-decoration: none;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.container h1 {
+    text-align: left;
+}
+
+dl {
+    margin: 20px 0;
+    text-align: left;
+}
+
+dt {
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+
+dd{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+}
+
+.navega {
+    font-size: 1.5rem;
+    width: auto;
+    text-align: right;
+}
+
+.cog-page__navigation{
+    width: 100% !important;
+    display: block !important;
+}

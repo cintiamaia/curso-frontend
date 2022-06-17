@@ -13,7 +13,7 @@
     <header>
         <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col-md-4 col-sm-12">
                     <img src="./images/Untitled design.png">
                 </div>
                 <div class="col">
@@ -35,7 +35,6 @@
                     <h2>Sobre nós</h2>
                     <p>Somos uma empresa focada em trazer soluções para sua horta ou plantação caseira, com sementes, substratos e outros itens de jardinagem da melhor qualidade para que suas plantas e ervas tenham o maior frescor e aroma indescritíveis.</p>
                     <p>Caso você tenha interesse em criar uma horta caseira para usar ingredientes plantados por você nas suas refeições, confira nosso site e entenda nossos produtos. <br><b>De nossas fazendas, diretamente para sua casa.</br></b></p>
-                    <a class="btn btn-lg btn-success">Conheça Mais</a>
                 </div>
                 <div class="col-md-5 col-sm-12">
                     <img src="./images/pexels-karolina-grabowska-4207908.jpg" alt="Imagem Exemplo" class="img-fluid">
@@ -54,10 +53,12 @@
 
                     <div class="card">
                         <img src="./images/pexels-gary-barnes-6231906.jpg" alt="Imagem Exemplo" class="img-fluid">
-                        <div class="card-body">
-                            <h5 class="card-title">Sementes</h5>
-                            <p class="card-text">Ervas, Legumes, Frutas.</p>
-                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1" >Ver Mais</a>
+                        <div class="col-sm-12">
+                            <div class="card-body col-sm-12">
+                                <h5 class="card-title">Sementes</h5>
+                                <p class="card-text">Ervas, Legumes, Frutas.</p>
+                                <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-1" >Ver Mais</a>
+                            </div>
                         </div>
                     </div>
 
@@ -94,21 +95,39 @@
                     <p>Ficou interessado? Preencha os campos do formulário para receber uma cotação.</p>
                 </div>
                 <div class="col-md-6 col-sm-12">
-                    <form class="form">
+                    <form class="form needs-validation" data-toggle="validator" novalidate>
 
                         <div class="input-group">
-                            <input class="form-control" type="text" name="nome" placeholder="Digite seu Nome">
+                            <input type="text" class="form-control obrigatorio" name="nome" placeholder="Digite seu Nome" required>
+                            <div class="valid-feedback">
+                                Legal!
+                              </div>
+                              <div class="invalid-feedback">
+                                Por favor, digite seu nome.
+                              </div>
                         </div>
 
                         <div class="input-group">
-                            <input class="form-control" type="text" name="email" placeholder="Digite seu Email">
+                            <input class="form-control obrigatorio email" type="email" name="email" placeholder="Digite seu Email" required>
+                            <div class="valid-feedback">
+                                Ótimo!
+                              </div>
+                              <div class="invalid-feedback">
+                                Por favor, digite um email válido.
+                              </div>
                         </div>
 
                         <div class="input-group">
-                            <textarea  class="form-control" name="solicitacao" placeholder="Digite sua Solicitação" rows="5"></textarea>
+                            <textarea  class="form-control obrigatorio" name="solicitacao" placeholder="Digite sua Solicitação" rows="5" required></textarea>
+                            <div class="valid-feedback">
+                                OK!
+                              </div>
+                              <div class="invalid-feedback">
+                                Por favor, digite sua solicitação.
+                              </div>
                         </div>
 
-                        <button type="submit" class="btn btn-lg btn-success">Solicitar Cotação</button>
+                        <button type="submit" class="btn btn-lg btn-success form">Solicitar Cotação</button>
 
                     </form>
 
@@ -261,7 +280,31 @@
                 </div>
         </div>
     </div>
+    <script>
+        (() => {
+          'use strict'
+        
+          
+          const forms = document.querySelectorAll('.needs-validation')
+        
+        
+          Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+              if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+              }
+        
+              form.classList.add('was-validated')
+            }, false)
+          })
+        })()
+        </script>
+</script>
 
+
+
+    <script src="js/validator.min.js"></script>
     <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/custom.css">
+    <title>Cadastro</title>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img src="./images/Untitled design.png">
+                </div>
+                <div class="col">
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item"><a class="nav-link active" href="./index.html" style="color:white;">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html"style="color: white;">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html" style="color:white;">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html" style="color:white;">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="cadastro">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <h2>Cadastro</h2>
+                    <p>Faça seu cadastro para receber nossos produtos em sua casa!</p>
+                </div>
+            </div>
+                    <form class="form">
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="col">
+                                    <label for="nome" class="col-form-label-sm">Nome</label> 
+                                    <input class="form-control" id="nome" type="text" name="nome" placeholder="Digite seu Nome">
+                                </div>  
+                            </div>
+                            <div class="col">
+                                <div class="col">
+                                    <label for="email" class="col-form-label-sm">Email</label>
+                                    <input class="form-control" id="email" type="text" name="email" placeholder="Digite seu Email">
+                                </div>   
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col rua">
+                                <label for="endereco" class="col-form-label-sm">Endereço Completo</label>
+                                <input type="text" class="form-control" id="endereco" placeholder="Endereço Completo">
+                            </div>
+                        </div>
+
+                        <div class="row address">
+                            <div class="col">
+                                <label for="cidade" class="col-form-label-sm">Cidade</label>
+                                <input type="text" name= "cidade" id= "cidade" class="form-control" placeholder="Digite sua Cidade">
+                            </div>
+                            <div class="col estado">
+                                <label for="estado" class="col-form-label-sm estado">Estado</label>
+                                <select name="estado" id="estado" class="form-control">
+                                    <option value="">Selecione um Estado</option>
+                                    <option value="sp">SP</option>
+                                    <option value="al">AL</option>
+                                    <option value="mg">MG</option>
+                                </select>
+                            </div>
+                            <div class="col">
+                                <label for="cep" class="col-form-label-sm">CEP</label>
+                                <input type="text" name="cep" id="cep" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col info">
+                                <label for="info" class="col-form-label-sm">Informações</label>
+                                     <textarea  class="form-control" id="info" name="info" placeholder="Mais Informações" rows="5"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-label" name="promo" id="promo">
+                                    <label for="promo">Aceito receber mensagens promocionais.</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                        <button type="submit" class="btn btn-lg btn-success">Cadastre-se</button>
+
+                    </form>
+
+                    <p class="cadastro" style="color:white;"><a href="#cadastro" data-bs-toggle="modal" data-bs-target="#modal-1">Inscreva-se para receber mais novidades!</a></p>
+        </div>
+    </section>
+
+
+
+    <div class="modal fade" id="modal-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Inscreva-se</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Preencha os campos para receber novidades e promoções.</h6>
+                    <form class="form-inline">
+                        <input type="text" class="form-control mb-2" name="nome" placeholder="Nome" required>
+                        <input type="text" class="form-control mb-2" name="email" placeholder="Email" required>
+                        <button type="submit" class="btn btn-lg btn-success">Receber Novidades</button>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary mb-2" id="botao" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+        <div class="modal fade" id="modal-2">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Substratos</h5>
+                        <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h6>Confira os tipos e os preços</h6>
+                        <table class="table table-hover table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Tipo</th>
+                                    <th>Valor</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Areia (Kilo)</td>
+                                    <td>R$ 35,00</td>
+                                </tr>
+                                <tr>
+                                    <td>Fibra de Coco (Kilo)</td>
+                                    <td>R$ 70,00</td>
+                                </tr>
+                                <tr>
+                                    <td>Argila Expandida (Kilo)</td>
+                                    <td>R$ 45,00</td>
+                                </tr>
+                                <tr>
+                                    <td>Terra Vegetal (Kilo)</td>
+                                    <td>R$ 20,00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+    
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        </div>         
+        
+        <div class="modal fade" id="modal-3">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Outros Produtos</h5>
+                            <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h6>Confira os outros produtos</h6>
+                            <table class="table table-hover table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Produto</th>
+                                        <th>Valor</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Tesoura de Jardinagem</td>
+                                        <td>R$ 25,00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Enxada Grande</td>
+                                        <td>R$ 30,00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Vaso de Cerâmica 5kg</td>
+                                        <td>R$ 80,00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Vaso de Fibra de Coco 3kg</td>
+                                        <td>R$ 20,00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Luvas de Jardinagem</td>
+                                        <td>R$ 20,00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+        
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

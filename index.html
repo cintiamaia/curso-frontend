@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./style/custom.css">
-    <title>Document</title>
+    <title>Plantar - Home</title>
 </head>
 <body>
-
+    
     <header>
         <div class="container">
             <div class="row">
@@ -27,6 +27,35 @@
             </div>
         </div>
     </header>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">  
+        <div class="carousel-indicators">  
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>  
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>  
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>  
+        </div>  
+        <div class="carousel-inner">  
+            <div class="carousel-item active"> 
+                <img src="images/pexels-meruyert-gonullu-6152386.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">  <h5>PLANTAR</h5>  <p class="titulo ">Produtos orgânicos fresquíssimos.</p>  </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/pexels-zen-chung-5529604.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">  <h5>PLANTAR</h5>  <p class="titulo">Saúde e contato com a natureza.</p>  </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/pexels-any-lane-5945640.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">  <h5>PLANTAR</h5>  <p class="titulo">Faça com suas próprias mãos.</p>  </div> 
+        </div>  
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">  
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>  
+            <span class="visually-hidden">Previous</span>  
+        </button>  
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">  
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>  
+            <span class="visually-hidden">Next</span>  
+        </button> 
+    </div>
+ 
     
     <section id="sobre">
         <div class="container">
@@ -35,6 +64,7 @@
                     <h2>Sobre nós</h2>
                     <p>Somos uma empresa focada em trazer soluções para sua horta ou plantação caseira, com sementes, substratos e outros itens de jardinagem da melhor qualidade para que suas plantas e ervas tenham o maior frescor e aroma indescritíveis.</p>
                     <p>Caso você tenha interesse em criar uma horta caseira para usar ingredientes plantados por você nas suas refeições, confira nosso site e entenda nossos produtos. <br><b>De nossas fazendas, diretamente para sua casa.</br></b></p>
+                    <a href="./cadastro.html"><button class="btn btn-success">Cadastre-se em nosso site!</button></a>
                 </div>
                 <div class="col-md-5 col-sm-12">
                     <img src="./images/pexels-karolina-grabowska-4207908.jpg" alt="Imagem Exemplo" class="img-fluid">
@@ -42,15 +72,15 @@
             </div>
         </div>
     </section>
-
+    
     <section id="produtos">
-
+        
         <div class="container">
             <div class="row">
                 <div class="col">
-
+                    
                     <h2>Produtos</h2>
-
+                    
                     <div class="card">
                         <img src="./images/pexels-gary-barnes-6231906.jpg" alt="Imagem Exemplo" class="img-fluid">
                         <div class="col-sm-12">
@@ -61,7 +91,7 @@
                             </div>
                         </div>
                     </div>
-
+                    
                     <div class="card">
                         <img src="./images/pexels-og-mpango-4090603.jpg" alt="Imagem Exemplo" class="img-fluid">
                         <div class="card-body">
@@ -70,7 +100,7 @@
                             <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal-2">Ver Mais</a>
                         </div>
                     </div>
-
+                    
                     <div class="card">
                         <img src="./images/pexels-greta-hoffman-7728016.jpg" alt="Imagem Exemplo" class="img-fluid">
                         <div class="card-body">
@@ -83,10 +113,10 @@
                 </div>
             </div>
         </div>
-
+        
     </section>
-
-
+    
+    
     <section id="contato">
         <div class="container">
             <div class="row">
@@ -96,48 +126,48 @@
                 </div>
                 <div class="col-md-6 col-sm-12">
                     <form class="form needs-validation" data-toggle="validator" novalidate>
-
+                        
                         <div class="input-group">
                             <input type="text" class="form-control obrigatorio" name="nome" placeholder="Digite seu Nome" required>
                             <div class="valid-feedback">
                                 Legal!
-                              </div>
-                              <div class="invalid-feedback">
+                            </div>
+                            <div class="invalid-feedback">
                                 Por favor, digite seu nome.
-                              </div>
+                            </div>
                         </div>
-
+                        
                         <div class="input-group">
                             <input class="form-control obrigatorio email" type="email" name="email" placeholder="Digite seu Email" required>
                             <div class="valid-feedback">
                                 Ótimo!
-                              </div>
-                              <div class="invalid-feedback">
+                            </div>
+                            <div class="invalid-feedback">
                                 Por favor, digite um email válido.
-                              </div>
+                            </div>
                         </div>
-
+                        
                         <div class="input-group">
                             <textarea  class="form-control obrigatorio" name="solicitacao" placeholder="Digite sua Solicitação" rows="5" required></textarea>
                             <div class="valid-feedback">
                                 OK!
-                              </div>
-                              <div class="invalid-feedback">
+                            </div>
+                            <div class="invalid-feedback">
                                 Por favor, digite sua solicitação.
-                              </div>
+                            </div>
                         </div>
-
+                        
                         <button type="submit" class="btn btn-lg btn-success form">Solicitar Cotação</button>
-
+                        
                     </form>
-
+                    
                 </div>
             </div>
         </div>
     </section>
-
-
-
+    
+    
+    
     <div class="modal fade" id="modal-1">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -177,134 +207,136 @@
                             </tr>
                         </tbody>
                     </table>
-
+                    
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
                 </div>
             </div>
         </div>
-
+        
     </div>
-
-
-        <div class="modal fade" id="modal-2">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Substratos</h5>
-                        <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <h6>Confira os tipos e os preços</h6>
-                        <table class="table table-hover table-striped">
-                            <thead>
-                                <tr>
-                                    <th>Tipo</th>
-                                    <th>Valor</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Areia (Kilo)</td>
-                                    <td>R$ 35,00</td>
-                                </tr>
-                                <tr>
-                                    <td>Fibra de Coco (Kilo)</td>
-                                    <td>R$ 70,00</td>
-                                </tr>
-                                <tr>
-                                    <td>Argila Expandida (Kilo)</td>
-                                    <td>R$ 45,00</td>
-                                </tr>
-                                <tr>
-                                    <td>Terra Vegetal (Kilo)</td>
-                                    <td>R$ 20,00</td>
-                                </tr>
-                            </tbody>
-                        </table>
     
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                    </div>
+    
+    <div class="modal fade" id="modal-2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Substratos</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Confira os tipos e os preços</h6>
+                    <table class="table table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th>Tipo</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Areia (Kilo)</td>
+                                <td>R$ 35,00</td>
+                            </tr>
+                            <tr>
+                                <td>Fibra de Coco (Kilo)</td>
+                                <td>R$ 70,00</td>
+                            </tr>
+                            <tr>
+                                <td>Argila Expandida (Kilo)</td>
+                                <td>R$ 45,00</td>
+                            </tr>
+                            <tr>
+                                <td>Terra Vegetal (Kilo)</td>
+                                <td>R$ 20,00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
                 </div>
             </div>
-        </div>         
-        
-        <div class="modal fade" id="modal-3">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title">Outros Produtos</h5>
-                            <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <h6>Confira os outros produtos</h6>
-                            <table class="table table-hover table-striped">
-                                <thead>
-                                    <tr>
-                                        <th>Produto</th>
-                                        <th>Valor</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Tesoura de Jardinagem</td>
-                                        <td>R$ 25,00</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Enxada Grande</td>
-                                        <td>R$ 30,00</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Vaso de Cerâmica 5kg</td>
-                                        <td>R$ 80,00</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Vaso de Fibra de Coco 3kg</td>
-                                        <td>R$ 20,00</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Luvas de Jardinagem</td>
-                                        <td>R$ 20,00</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-        
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                        </div>
-                    </div>
+        </div>
+    </div>         
+    
+    <div class="modal fade" id="modal-3">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Outros Produtos</h5>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
+                <div class="modal-body">
+                    <h6>Confira os outros produtos</h6>
+                    <table class="table table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th>Produto</th>
+                                <th>Valor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tesoura de Jardinagem</td>
+                                <td>R$ 25,00</td>
+                            </tr>
+                            <tr>
+                                <td>Enxada Grande</td>
+                                <td>R$ 30,00</td>
+                            </tr>
+                            <tr>
+                                <td>Vaso de Cerâmica 5kg</td>
+                                <td>R$ 80,00</td>
+                            </tr>
+                            <tr>
+                                <td>Vaso de Fibra de Coco 3kg</td>
+                                <td>R$ 20,00</td>
+                            </tr>
+                            <tr>
+                                <td>Luvas de Jardinagem</td>
+                                <td>R$ 20,00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
         </div>
     </div>
-    <script>
-        (() => {
-          'use strict'
-        
-          
-          const forms = document.querySelectorAll('.needs-validation')
+</div>
+<script>
+    (() => {
+        'use strict'
         
         
-          Array.from(forms).forEach(form => {
+        const forms = document.querySelectorAll('.needs-validation')
+        
+        
+        Array.from(forms).forEach(form => {
             form.addEventListener('submit', event => {
-              if (!form.checkValidity()) {
-                event.preventDefault()
-                event.stopPropagation()
-              }
-        
-              form.classList.add('was-validated')
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+                
+                form.classList.add('was-validated')
             }, false)
-          })
-        })()
-        </script>
+        })
+    })()
+</script>
 </script>
 
+<script>
+    const carousel = new bootstrap.Carousel('#carouselExampleFade')
+</script>
 
-
-    <script src="js/validator.min.js"></script>
-    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="./bootstrap/js/validator.min.js"></script>
+<script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

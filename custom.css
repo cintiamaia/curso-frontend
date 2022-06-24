@@ -6,7 +6,11 @@ section {
 
 input,
 textarea {
-    margin-bottom: 1rem;
+margin-top: 1rem;
+}
+
+.btn.btn-lg.btn-success.form {
+    margin-top: 1rem;
 }
 
 .card {
@@ -28,6 +32,7 @@ h2 {
    border-radius: 10px;
    margin: 7px;
    font-weight: 400;
+   text-align: center;
    float: right;
 }
 
@@ -38,6 +43,110 @@ h2 {
 div li:hover {
     background-color: darkgreen;
 }
+  
+  @media (max-width: 445px){
+    .card, .nav-item {
+        width: 100%;
+    }
+    header img {
+        margin-left: 95px;
+    }
+
+  }
+
+  @media (max-width: 376px){
+    header img {
+        margin-left: 70px;
+    }
+  }
+
+  @media (max-width: 320px){
+    header img {
+        margin-left: 40px;
+    }
+  }
 
 
+  .btn.btn-lg.btn-success {
+      max-width: 200px;
+      font-weight: 400;
+      font-size: 20px;
+      padding: 3px 6px 3px 6px;
+      margin-top: 1rem;
+  }
 
+  .col-md-7.col-sm-12 {
+    margin-bottom: 15px;
+  }
+
+  #produtos {
+      padding-top: 0;
+  }
+
+  .mensagem,
+#resultado {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 2rem;
+    
+}
+
+.erro {
+    border-color: #f00;
+}
+
+.address {
+    margin-top: 1rem;
+}
+
+.estado label {
+    margin-bottom: 1rem;
+}
+
+.rua, .info {
+    margin-top: 1rem;
+}
+
+.form-check {
+    padding-left: 0;
+}
+
+.cadastro {
+    margin-top: 3rem;
+    font-size: larger;
+    font-weight: 700;
+    background-color: #069a1c;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.cadastro a {
+    margin: auto;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.cadastro a:hover {
+    color: #ddd;
+}
+
+.d-block {
+    margin: auto;
+}
+
+.carousel-caption.d-none.d-md-block {
+    border-radius: 20px;
+    background-color: darkgreen;
+    color: aliceblue;
+    font-weight: 500;
+    font-size: larger;
+    opacity: 90%;
+
+}
+
+p, h5 {
+    opacity: 100% !important;
+}

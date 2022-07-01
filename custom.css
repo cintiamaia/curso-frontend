@@ -150,3 +150,7 @@ div li:hover {
 p, h5 {
     opacity: 100% !important;
 }
+
+.form-check label{
+    font-size: 15px;
+}

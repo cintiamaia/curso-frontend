@@ -13,7 +13,7 @@
     <header>
         <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col-md-4 col-sm-12">
                     <img src="./images/Untitled design.png">
                 </div>
                 <div class="col">
@@ -36,61 +36,97 @@
                     <p>Faça seu cadastro para receber nossos produtos em sua casa!</p>
                 </div>
             </div>
-                    <form class="form">
+                    <form class="form needs-validation" data-toggle="validator" novalidate>
 
                         <div class="row">
-                            <div class="col">
+                            <div class="col-sm-12">
                                 <div class="col">
                                     <label for="nome" class="col-form-label-sm">Nome</label> 
-                                    <input class="form-control" id="nome" type="text" name="nome" placeholder="Digite seu Nome">
+                                    <input class="form-control" id="nome" type="text" name="nome" placeholder="Digite seu Nome" required>
+                                    <div class="valid-feedback">
+                                        Legal!
+                                    </div>
+                                    <div class="invalid-feedback">
+                                        Por favor, digite seu nome.
+                                    </div>
                                 </div>  
                             </div>
                             <div class="col">
-                                <div class="col">
+                                <div class="col-sm-12">
                                     <label for="email" class="col-form-label-sm">Email</label>
-                                    <input class="form-control" id="email" type="text" name="email" placeholder="Digite seu Email">
+                                    <input class="form-control obrigatorio email" type="email" name="email" placeholder="Digite seu Email" required>
+                                    <div class="valid-feedback">
+                                        Valeu!
+                                    </div>
+                                    <div class="invalid-feedback">
+                                        Por favor, digite seu email.
+                                    </div>
                                 </div>   
                             </div>
                         </div>
 
                         <div class="row">
-                            <div class="col rua">
+                            <div class="col-sm-12 rua">
                                 <label for="endereco" class="col-form-label-sm">Endereço Completo</label>
-                                <input type="text" class="form-control" id="endereco" placeholder="Endereço Completo">
+                                <input type="text" class="form-control" id="endereco" placeholder="Endereço Completo" required>
+                                <div class="valid-feedback">
+                                    OK!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Por favor, digite seu endereço.
+                                </div>
                             </div>
                         </div>
 
                         <div class="row address">
-                            <div class="col">
+                            <div class="col-sm-12">
                                 <label for="cidade" class="col-form-label-sm">Cidade</label>
-                                <input type="text" name= "cidade" id= "cidade" class="form-control" placeholder="Digite sua Cidade">
+                                <input type="text" name= "cidade" id= "cidade" class="form-control" placeholder="Digite sua Cidade" required>
+                                <div class="valid-feedback">
+                                    OK!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Por favor, digite sua cidade.
+                                </div>
                             </div>
-                            <div class="col estado">
+                            <div class="col-sm-12 estado">
                                 <label for="estado" class="col-form-label-sm estado">Estado</label>
-                                <select name="estado" id="estado" class="form-control">
+                                <select name="estado" id="estado" class="form-control" required>
                                     <option value="">Selecione um Estado</option>
                                     <option value="sp">SP</option>
                                     <option value="al">AL</option>
                                     <option value="mg">MG</option>
                                 </select>
+                                <div class="valid-feedback">
+                                    OK!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Por favor, selecione seu estado.
+                                </div>
                             </div>
-                            <div class="col">
+                            <div class="col-sm-12">
                                 <label for="cep" class="col-form-label-sm">CEP</label>
-                                <input type="text" name="cep" id="cep" class="form-control">
+                                <input type="number" name="cep" id="cep" class="form-control" required>
+                                <div class="valid-feedback">
+                                    Entendido!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Por favor, insira seu CEP.
+                                </div>
                             </div>
                         </div>
 
                         <div class="row">
-                            <div class="col info">
+                            <div class="col-sm-12 info">
                                 <label for="info" class="col-form-label-sm">Informações</label>
                                      <textarea  class="form-control" id="info" name="info" placeholder="Mais Informações" rows="5"></textarea>
                             </div>
                         </div>
 
                         <div class="row">
-                            <div class="col">
+                            <div class="col-sm-12">
                                 <div class="form-check">
-                                    <input type="checkbox" class="form-check-label" name="promo" id="promo">
+                                    <input type="checkbox" class="form-check-label" name="promo" id="promo" required>
                                     <label for="promo">Aceito receber mensagens promocionais.</label>
                                 </div>
                             </div>
@@ -225,6 +261,28 @@
         </div>
     </div>
 
+
+
     <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+        (() => {
+            'use strict'
+            
+            
+            const forms = document.querySelectorAll('.needs-validation')
+            
+            
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+                    
+                    form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
 </body>
 </html>

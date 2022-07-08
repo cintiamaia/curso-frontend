@@ -1,0 +1,96 @@
+.featured-item img{
+    max-width: 200px;
+}
+
+.navbar-brand img {
+    max-width: 100px;
+}
+
+.navbar-nav.ml-auto a{
+    color: black;
+}
+
+.carousel-caption.d-none.d-md-block {
+    border-radius: 20px;
+    background-color: rgb(12, 14, 12);
+    color: aliceblue;
+    font-weight: 500;
+    font-size: larger;
+    opacity: 90%;
+
+}
+
+p, h5 {
+    opacity: 100% !important;
+}
+
+body{
+    background-color: rgb(37, 32, 32);
+}
+
+h4, h6, .copyright-text, .banner, h1, h2, p {
+    color: aliceblue;
+}
+
+.caption {
+    margin-top: 15px;
+}
+
+.modal-title {
+    color: black;
+}
+
+.cadastro {
+    margin-top: 3rem;
+    font-size: larger;
+    font-weight: 700;
+    background-color: #069a1c;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.cadastro a {
+    margin: auto;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.cadastro a:hover {
+    color: #ddd;
+}
+
+#contato {
+    margin-top: 50px;
+    border-top: #ddd;
+}
+
+.sub-footer {
+    margin-top: 50px;
+}
+
+.erro {
+    border-color: #f00;
+}
+
+.input-group {
+    margin-top: 10px;
+}
+
+#featured {
+    margin-top: 50px;
+}
+
+#botao {
+    margin-top: 10px;
+}
+
+.navbar-collapse{
+    flex-grow: 0;
+}
+
+.nav-link {
+    min-width: 100px;
+}

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./vendor/owl/css/owl.css">
+    <link rel="stylesheet" href="./vendor/fontawesome/fontawesome.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/92b39e66ab.js" crossorigin="anonymous"></script>
+    <title>DiscON</title>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-white static-top">
+        <div class="container">
+            <div class="container">
+            <a class="navbar-brand" href="#"><img src="assets/images/logo.jpg" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+            <div class="navbar" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class=" nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="caption">
+                        <h2>DiscON</h2>
+                        <div class="line-dec"></div>
+                        <p>Encontre aqui os melhores discos nacionais e importados</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">   
+        <div class="carousel-inner">  
+            <div class="carousel-item active"> 
+                <img src="assets/images/pexels-ivan-mudruk-11114656.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">  <h5>DiscON</h5>  <p class="titulo ">Música a seu alcance.</p>  </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/pexels-dmitry-demidov-3784221.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">  <h5>DiscON</h5>  <p class="titulo">Cultura em movimento.</p>  </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/pexels-lukas-306088.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">  <h5>DiscON</h5>  <p class="titulo">Encontre seus títulos prediletos.</p>  </div> 
+            </div>  
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">  
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>  
+                <span class="visually-hidden">Previous</span>  
+            </button>  
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">  
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>  
+                <span class="visually-hidden">Next</span>  
+            </button> 
+        </div>
+        
+        <div id="featured" class="featured-items">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-heading">
+                            <div class="line-dec"></div>
+                            <h1>Destaques</h1>
+                            <h6>Arraste para o lado e confira mais!</h6>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="owl-carousel owl-theme">
+                            <div class="featured-item col-md-6">
+                                <img src="assets/images/spaceoddity.jpg" alt="Item 1">
+                                <h4>David Bowie - Space Oddity</h4>
+                                <h6>R$ 150,00</h6>
+                                <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal">
+                                    Comprar
+                                </button>
+                            </div>
+                            <div class="featured-item col-md-6">
+                                <img src="assets/images/sambaesquema.jpg" alt="Item 2">
+                                <h4>Jorge Ben - Samba Esquema Novo</h4>
+                                <h6>R$ 120,00</h6>
+                                <button class="btn btn-success"data-bs-toggle="modal" data-bs-target="#modal">
+                                    Comprar
+                                </button>
+                            </div>
+                            <div class="featured-item">
+                                <img src="assets/images/theworks.jpg" alt="Item 3">
+                                <h4>Queen - The Works</h4>
+                                <h6>R$ 200,00</h6>
+                                <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal">
+                                    Comprar
+                                </button>
+                            </div>
+                            <div class="featured-item">
+                                <img src="assets/images/fullgas.jfif" alt="Item 4">
+                                <h4>Marina Lima - Fullgás</h4>
+                                <h6>R$ 50,00</h6>
+                                <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal">
+                                    Comprar
+                                </button>
+                            </div>
+                            <div class="featured-item">
+                                <img src="assets/images/unapologetic.jpg" alt="Item 5">
+                                <h4>Rihanna - Unapologetic</h4>
+                                <h6>R$ 100,00</h6>
+                                <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal">
+                                    Comprar
+                                </button>
+                            </div>
+                            <div class="featured-item">
+                                <img src="assets/images/disritmia.jfif" alt="Item 6">
+                                <h4>Martinho da Vila - Disritmia</h4>
+                                <h6>R$ 80,00</h6>
+                                <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal">
+                                    Comprar
+                                </button>
+                            </div>
+                            <div class="featured-item">
+                                <img src="assets/images/morrisonhotel.jpg" alt="Item 7">
+                                <h4>The Doors - Morrison Hotel</h4>
+                                <h6>R$ 90,00</h6>
+                                <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal">
+                                    Comprar
+                                </button>
+                            </div>
+                            <div class="featured-item">
+                                <img src="assets/images/falsobrilhante.jpg" alt="Item 8">
+                                <h4>Elis Regina - Falso Brilhante</h4>
+                                <h6>R$ 120,00</h6>
+                                <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal">
+                                    Comprar
+                                </button>
+                            </div>
+                            <div class="featured-item">
+                                <img src="assets/images/mindgames.jpg" alt="Item 9">
+                                <h4>John Lennon - Mind Games</h4>
+                                <h6>R$ 180,00</h6>
+                                <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modal">
+                                    Comprar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="modal fade" id="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Reservar</h5>
+                        <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h6 class="modal-title">Preencha os campos para entrarmos em contato com você.</h6>
+                        <form class="form-inline">
+                            <input type="text" class="form-control mb-2" name="nome" placeholder="Nome" required>
+                            <input type="text" class="form-control mb-2" name="email" placeholder="Email" required>
+                            <button type="submit" class="btn btn-lg btn-success">Receber Novidades</button>
+                            
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary mb-2" id="botao" data-bs-dismiss="modal">Fechar</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+
+
+        <section id="contato">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <h2>Contato</h2>
+                        <p>Ficou interessado? Alguma dúvida? Então preencha os campos do formulário, entraremos em contato com você :)</p>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <form class="form needs-validation" data-toggle="validator" novalidate>
+                            
+                            <div class="input-group">
+                                <input type="text" class="form-control obrigatorio" name="nome" placeholder="Digite seu Nome" required>
+                                <div class="valid-feedback">
+                                    Legal!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Por favor, digite seu nome.
+                                </div>
+                            </div>
+                            
+                            <div class="input-group">
+                                <input class="form-control obrigatorio email" type="email" name="email" placeholder="Digite seu Email" required>
+                                <div class="valid-feedback">
+                                    Ótimo!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Por favor, digite um email válido.
+                                </div>
+                            </div>
+                            
+                            <div class="input-group">
+                                <textarea  class="form-control obrigatorio" name="solicitacao" placeholder="Digite sua Pergunta" rows="5" required></textarea>
+                                <div class="valid-feedback">
+                                    OK!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Por favor, digite sua dúvida.
+                                </div>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-lg btn-success form" id="botao">Enviar</button>
+                            
+                        </form>
+                        
+                    </div>
+                </div>
+        
+
+                        
+        <div class="sub-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="copyright-text">
+                            <p>DiscON &copy; Todos os direitos reservados // Site desenvolvido por Cíntia</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            (() => {
+                'use strict'
+                
+                
+                const forms = document.querySelectorAll('.needs-validation')
+                
+                
+                Array.from(forms).forEach(form => {
+                    form.addEventListener('submit', event => {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+                        
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+            })()
+        </script>
+        
+        <script src="./vendor/jquery/jquery-3.6.0.min.js"></script>
+        <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="./vendor/owl/js/owl.js"></script>
+        <script src="./js/custom.js"></script>
+    </body>
+    </html>
